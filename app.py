@@ -1,8 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello():
-    return "UTA ID: 1001831207   Name: Sai Parinita Pachalla"
+    return render_template('index.html')
